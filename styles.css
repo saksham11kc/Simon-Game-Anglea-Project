@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #e74c3c;
 }
 
 #level-title {
@@ -9,11 +9,58 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
+.instruction{
+  color:#34495e;
+  background-color:#fff ;
+  height:25px;
+  border-radius:25px;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+  cursor:pointer;
+  
+}
+.instruction:hover{ 
+  background-color:green;
 
+
+}
 .container {
   display: block;
   width: 50%;
   margin: auto;
+
+}
+
+.popup{ 
+  background:rgba(0, 0, 0, 0.6);
+  
+  
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  display: none;
+  justify-content: center; 
+  align-items:center;
+}
+.popup-content{
+height: 250px;
+width: 500px; 
+background: linear-gradient(to bottom left, teal, purple);
+padding: 20px;
+border-radius: 5px; 
+position: relative;
+}
+.close{
+position: absolute;
+top: -15px; 
+right: -15px;
+ background:#fff;
+height: 20px; 
+width: 20px;
+ border-radius: 50%;
+box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+cursor: pointer;
 
 }
 
@@ -24,6 +71,7 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  cursor:crosshair;
 }
 
 .game-over {

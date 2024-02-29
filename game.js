@@ -60,6 +60,7 @@ function nextSequence() {
   playSound(randomChosenColour);
 }
 
+
 function animatePress(currentColor) {
   $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
@@ -71,6 +72,17 @@ function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
+
+document. getElementById ("ins").addEventListener("click", function() 
+{
+  document.querySelector (".popup").style.display = "flex";
+});
+
+document. querySelector(".close").addEventListener("click", function() 
+{
+  document.querySelector (".popup").style.display = "none";
+});
+
 
 function startOver() {
   level = 0;
