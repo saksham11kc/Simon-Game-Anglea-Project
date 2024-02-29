@@ -73,7 +73,9 @@ cursor: pointer;
   border-radius: 20%;
   cursor:crosshair;
 }
-
+.logo{
+  border-radius: 50%;
+}
 .game-over {
   background-color: red;
   opacity: 0.8;
